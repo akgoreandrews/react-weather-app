@@ -14,12 +14,13 @@ function App() {
    <div className="card-body">
        <Search />
    </div>
-    <City />
+    <City /> 
+    <Weather city = "Paris"/>
  </div>
            </div>
         </div>
        <h1>Hello world!</h1>
-       <Weather city = "Paris"/>
+      
 
       </header>
     </div>

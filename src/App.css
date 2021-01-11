@@ -35,3 +35,46 @@ h1 {
   border-radius: 4px;
   border: 1px solid #7c52ef;
 }
+.weather-temperature img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
+}
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
+.weather-temperature strong {
+  color: #7c52ef;
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+}
+.current-weather {
+  border: 1px solid #7c52ef;
+  border-radius: 40px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  padding: 0;
+  text-transform: capitalize;
+  color: #1fbca5;
+}
+li:first-letter {
+  text-transform: capitalize;
+}
+
+.temperature {
+  font: 60px;
+  font-weight: 400;
+  line-height: 1;
+}
+.today {
+  font-size: 15px;
+  color: #1fbca5;
+}
