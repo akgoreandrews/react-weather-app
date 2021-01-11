@@ -1,6 +1,7 @@
 import React from "react";
 import Weather from "./Weather";
 import './App.css';
+import Search from "./Search";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
            <div className="weather-wrapper">
  <div class="weather-app">
    <div className="card-body">
+       <Search />
    </div>
  </div>
            </div>
