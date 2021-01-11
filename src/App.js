@@ -4,6 +4,7 @@ import './App.css';
 import Search from "./Search";
 import City from "./City";
 import Forecast from "./Forecast";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
      <Forecast />
  </div>
            </div>
+           <Footer />
         </div>
        <h1>Hello world!</h1>
       

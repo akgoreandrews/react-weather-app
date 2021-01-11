@@ -92,3 +92,6 @@ li:first-letter {
   display: block;
   margin: 0 auto;
 }
+.signature {
+  font-size: 15px;
+}
