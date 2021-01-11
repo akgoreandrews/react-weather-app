@@ -3,6 +3,7 @@ import Weather from "./Weather";
 import './App.css';
 import Search from "./Search";
 import City from "./City";
+import Forecast from "./Forecast";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
        <Search />
    </div>
     <City /> 
-    <Weather city = "Paris"/>
+    <Weather />
+     <Forecast />
  </div>
            </div>
         </div>
