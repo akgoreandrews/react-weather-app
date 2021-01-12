@@ -11,7 +11,7 @@ export default function Footer() {
         {" "}
         Open-source code
       </a>
-      by: Anne-Katherine Treur
+       {" "}by: Anne-Katherine Treur
     </p>
   );
 }
