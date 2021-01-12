@@ -12,7 +12,7 @@ export default function Search() {
                 class="button"
                 id="enter-city"
                 placeholder="Enter your city here"
-                autofocus="on"
+                autoFocus="on"
               />
             </form>
           </div>
