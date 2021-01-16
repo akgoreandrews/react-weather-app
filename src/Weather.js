@@ -48,12 +48,9 @@ export default function Weather(props) {
       </div>
     </div>
   );
-  <h1>
-        <span className="city" id="city">
+  <span className="city" id="city">
         {weatherData.city}
       </span>
-      </h1>
-
        <div className="current-weather">
       <div className="card-body">
         <div className="row">
