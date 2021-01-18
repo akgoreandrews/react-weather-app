@@ -12,9 +12,7 @@ function App() {
            <div className="weather-wrapper">
  <div class="weather-app">
    <div className="card-body">
-       <Search />
    </div>
-    <City /> 
     <Weather />
      <Forecast />
  </div>
