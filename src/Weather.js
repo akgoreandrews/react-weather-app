@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./App.css";
+import "./Weather.css";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -20,54 +20,72 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="Weather">
-        <form>
-          <div className="row">
-            <div className="col-9">
-              <input
-                type="search"
-                placeholder="Enter a city.."
-                className="form-control"
-                autoFocus="on"
-              />
-            </div>
-            <div className="col-3">
-              <input
-                type="submit"
-                value="Search"
-                className="btn btn-primary w-100"
-              />
-            </div>
-          </div>
-        </form>
-        <h1>{weatherData.city}</h1>
-        <ul>
-          <li>{weatherData.date}</li>
-          <li className="text-capitalize">{weatherData.description}</li>
-        </ul>
-        <div className="row mt-3">
+           <div className="search">
+      <div className="card-body">
+        <div className="row">
           <div className="col-6">
-            <div className="clearfix">
-              <img
+            <form id="enter-city-search">
+              <input
+                type="text"
+                class="button"
+                id="enter-city"
+                placeholder="Enter your city here"
+                autofocus="on"
+              />
+            </form>
+          </div>
+          <div className="col-3">
+            <input type="submit" className="search-button" value="Search" />
+          </div>
+          <div className="col-3">
+            <input
+              type="submit"
+              className="current-location-button"
+              id="current-location-button"
+              value="Current location"
+            />
+          </div>
+        </div>
+      </div>
+    </div><span className="city">
+        <h1>{weatherData.city}</h1>
+        </span>
+        <div className="current-weather">
+      <div className="card-body">
+        <div className="row">
+          <div className="col-6">
+            <div className="clearfix weather-temperature" />
+             <img
                 src={weatherData.iconUrl}
                 alt={weatherData.description}
                 className="float-left"
               />
-              <div className="float-left">
-                <span className="temperature">
-                  {Math.round(weatherData.temperature)}
-                </span>
-                <span className="unit">°C</span>
-              </div>
+            <div className="float-left">
+              <span className="temperature">{Math.round(weatherData.temperature)}</span>  
+              <span className="unit">°C</span>
+              <ul>
+                <li>
+                  Last updated:<li className="date">{weatherData.date}</li>
+                </li>
+              <li className="text-capitalize">{weatherData.description}</li>
+              </ul>
             </div>
           </div>
-          <div className="col-6">
-            <ul>
-              <li>Humidity: {weatherData.humidity}%</li>
-              <li>Wind: {weatherData.wind} km/h</li>
+          <div className="col-sm-4">
+            <ul className="today">
+              <li>
+                Wind:<span className="wind-data">{weatherData.wind} km/h</span>
+                <span className="wind-unit">km/h</span>
+              </li>
+              <li>
+                Humidity:<span className="humidity-data">{weatherData.humidity}%</span>
+                <span className="humidity-unit">%</span>
+              </li>
             </ul>
           </div>
         </div>
       </div>
+    </div>
     );
   } else {
     const apiKey = "bf038e802ff968ae367d4b3973b5ce64";
