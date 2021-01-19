@@ -13,7 +13,7 @@ function App() {
  <div class="weather-app">
    <div className="card-body">
    </div>
-    <Weather />
+    <Weather defaultCity="Paris"/>
      <Forecast />
  </div>
            </div>
