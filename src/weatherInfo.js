@@ -33,11 +33,10 @@ export default function weatherInfo(props){
             <ul className="today">
               <li>
                 Wind:<span className="wind-data">{props.data.wind} km/h</span>
-                <span className="wind-unit">km/h</span>
               </li>
               <li>
                 Humidity:<span className="humidity-data">{props.data.humidity}%</span>
-                <span className="humidity-unit">%</span>
+    
               </li>
             </ul>
           </div>
