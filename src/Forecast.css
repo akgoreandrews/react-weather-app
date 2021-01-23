@@ -1,15 +1,9 @@
-.weather-forecast h3 {
+.Forecast h3 {
   color: #1fbca5;
   font-size: 15px;
   text-align: center;
   margin: 15px;
 }
-.weather-forecast-temperature {
-  color: #1fbca5;
-  text-align: center;
-}
-.weather-forecast img {
-  width: 100%;
+.Forecast canvas {
   display: block;
-  margin: 0 auto;
 }
