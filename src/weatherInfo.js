@@ -32,10 +32,10 @@ export default function weatherInfo(props){
           <div className="col-sm-4">
             <ul className="today">
               <li>
-                Wind:<span className="wind-data">{props.data.wind} km/h</span>
+                Wind: <span className="wind-data">{props.data.wind} km/h</span>
               </li>
               <li>
-                Humidity:<span className="humidity-data">{props.data.humidity}%</span>
+                Humidity: <span className="humidity-data">{props.data.humidity}%</span>
     
               </li>
             </ul>
